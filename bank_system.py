@@ -20,13 +20,7 @@ while True:
     print("2. deposit")
     print("3. withdraw")
     print("4. exit")
-    choice = input("Enter your choice: ").strip()
-
-    try:
-        ch = int(choice)
-    except ValueError:
-        print("Invalid choice")
-        continue
+    ch = input("Enter your choice: ")
     
     if ch == 1:
         check_bal(bal)
